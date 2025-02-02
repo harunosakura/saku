@@ -13,34 +13,35 @@
             min-height: 100vh;
             margin: 0;
             overflow: hidden;
-            flex-direction: column;
+            flex-direction: column; /* Still vertical alignment */
         }
 
         .pink-border {
             width: 90vw;
             height: 90vh;
-            max-width: 800px;
-            max-height: 600px;
+            max-width: 900px; /* Increased max-width */
+            max-height: 700px; /* Increased max-height */
             border: 4px solid;
-            border-image: linear-gradient(to right, #ff69b4, #ffc0cb, #ffb6c1, #ff69b4) 1; /* Pink gradient */
+            border-image: linear-gradient(to right, #ff69b4, #ffc0cb, #ffb6c1, #ff69b4) 1;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink glow */
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
+            flex-direction: column; /* Vertical alignment within border */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
         }
 
         img {
-            max-width: 90%;
-            max-height: 90%;
+            max-width: 95%; /* GIF takes up more of the border */
+            max-height: 95%;
         }
 
-        .text-below {
+        .text-inside {  /* New class for text inside border */
             color: white;
             font-size: 2em;
             font-family: sans-serif;
             text-align: center;
+            margin-top: 20px; /* Space between GIF and text */
         }
     </style>
 </head>
@@ -48,10 +49,8 @@
 
     <div class="pink-border">
         <img src="sakura.gif" alt="sakura">
-    </div>
-
-    <div class="text-below">
-        Shannaroooo!!!!
+        <div class="text-inside">  Shannaroooo!!!!
+        </div>
     </div>
 
 </body>
