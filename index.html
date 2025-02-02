@@ -6,40 +6,53 @@
     <title>🌸SAKURAAA🌸</title>
     <style>
         body {
-            background-color: #111; /* Dark background */
+            background-color: #111;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Ensure full viewport height */
-            margin: 0; /* Remove default margins */
-            overflow: hidden; /* Hide scrollbars if content overflows */
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
         }
 
-        .neon-border {
-            width: 90vw; /* Adjust as needed */
-            height: 90vh; /* Adjust as needed */
-            max-width: 800px; /* Set a maximum width */
-            max-height: 600px; /* Set a maximum height */
+        .pink-border {
+            width: 90vw;
+            height: 90vh;
+            max-width: 800px;
+            max-height: 600px;
             border: 4px solid;
-            border-image: linear-gradient(to right, #0f0, #0ff, #f0f, #f00, #f0f, #0ff, #0f0) 1;
-            border-radius: 10px; /* Rounded corners (optional) */
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Neon glow */
+            border-image: linear-gradient(to right, #ff69b4, #ffc0cb, #ffb6c1, #ff69b4) 1; /* Pink gradient */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink glow */
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        
-        img {
-          max-width: 100%; /* Ensure GIF fits within the container */
-          max-height: 100%;
+            margin-bottom: 20px;
         }
 
+        img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .text-below {
+            color: white;
+            font-size: 2em;
+            font-family: sans-serif;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <div class="neon-border">
-        <img src="sakura.gif" alt="Centered GIF">  </div>
+    <div class="pink-border">
+        <img src="sakura.gif" alt="sakura">
+    </div>
+
+    <div class="text-below">
+        Shannaroooo!!!!
+    </div>
 
 </body>
 </html>
